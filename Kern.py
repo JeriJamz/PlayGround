@@ -1,4 +1,5 @@
 from Printr import * 
+from  File import *
 #****************COMPILE(...or run) AT YOUR OWN RISK***************************
 #I just cant compile it but it should be good. Ima dawg just check my spelling
 import time,sys,pyautogui as pag, curses
@@ -9,13 +10,14 @@ import time,sys,pyautogui as pag, curses
 
 class KernBootWindow:
 
-    def __init__(name,boot):
+    def __init__(name,boot,put):
         self. name = name
         self.boot = termin
         name = The Screen
+        self.put = termin.getkey()
     
     def Boots(self):#see if I can make this the main window wit a boot up and file director
-        
+         
         termin = curses.initscr()
     
         termin.print("High-Level Kernal.OS")#This might not work
@@ -23,6 +25,12 @@ class KernBootWindow:
         termin.keypad(True)
         termin.clear()#The Boot Uplol wheres The ASM windows?
         termin.addstr()#I should start getting user input... Let me make a menu
+
+        menu()
+
+        act = self.put
+        act()#this whooping on me I gotta go read
+        
     
     def oltra(self,End):
         
