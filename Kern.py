@@ -46,4 +46,10 @@ class KernBootWindow:
     
         termin.endwin()
 
+    def notepad(self):#I think this could give me that notepad effect...How do I make this a keyword
+        newFile = open("","Open", encoding = "Utf-8")
+        
+if userResponse == "Notepad".lower()
+
+
 boot()
