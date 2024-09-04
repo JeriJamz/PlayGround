@@ -1,5 +1,5 @@
 #Need a Menu for the Files... Will this work?
-from Printr import *
+from printr import *
 import pprint
 #can I make a server wit python or do I need Django... Ima use Go instead
 
