@@ -19,7 +19,7 @@ class KernBootWindow:
          
         termin = curses.initscr()
 
-        termin.shell_mode #yes all that commiting for one line
+        termin.def_shell_mode() #yes all that commiting for one line
         termin.print("High-Level Kernal.OS")#This might not work
         termin.noecho()
         termin.keypad(True)
