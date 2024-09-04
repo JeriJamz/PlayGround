@@ -1,5 +1,6 @@
 from Printr import * 
 from  File import *
+from notepad import *
 #****************COMPILE(...or run) AT YOUR OWN RISK***************************
 #I just cant compile it but it should be good. Ima dawg just check my spelling
 import time,sys,pyautogui as pag, curses
@@ -10,10 +11,8 @@ import time,sys,pyautogui as pag, curses
 
 class KernBootWindow:
 
-    def __init__(name,boot,put):
-        self. name = name
+    def __init__(self,boot,put):
         self.boot = termin
-        name = The Screen
         self.put = termin.getkey()
     
     def Boots(self):#see if I can make this the main window wit a boot up and file director
@@ -46,10 +45,7 @@ class KernBootWindow:
     
         termin.endwin()
 
-    def notepad(self):#I think this could give me that notepad effect...How do I make this a keyword
-        newFile = open("","Open", encoding = "Utf-8")
-        
-if userResponse == "Notepad".lower()
+
 
 
 boot()
