@@ -1,21 +1,20 @@
 #This is the header file that handles all notepad function. It handles the Files for the FilesDirectory 
 #Working on the user input
 from printr import *
+import sys,os
 
+class novel:
 
-class Notepad:
+    def __init__(self, pad,edition,add,page):
 
-    def __init__(self, pad):
-
+        self.edition = []
+        self.add = [] #see if I can get this list to print
         self.pad = Open
 
+    def quil(self,adds):
 
-    def CreateFile(self):
-
-        response = input()
-        termin.getch(response)
-
-        if response == "Create File".lower():
+        self.adds.append(add)#this will add but I need user input
+        if self.adds.append(add) = +1:
+            sys.stdin.write(userBox) in open('','x',encoding = 'utf-8')# why I think this work
+            sys.stdin.flush(quil)#new problem this gone mess with yo fildDir, need to make this local.
             
-        
-        Open = open("","Open", Encoding = "utf-8")#Filename, type, encoding = utf-8
