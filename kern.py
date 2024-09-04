@@ -1,5 +1,5 @@
-from Printr import * 
-from  File import *
+from printr import * 
+from  file import *
 from notepad import *
 #****************COMPILE(...or run) AT YOUR OWN RISK***************************
 #I just cant compile it but it should be good. Ima dawg just check my spelling
