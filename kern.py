@@ -7,13 +7,12 @@ import time,sys,pyautogui as pag, curses
 
 #refresh()<-update screen after input, noutrefresh()<-change background(just text),doupdate()<- update display
 
-#tweak'd need a class
-
 class KernBootWindow:
 
-    def __init__(self,boot,put):
-        self.boot = termin
+    def __init__(self,boot,put, usr):
+        self.boot = termi
         self.put = termin.getkey()
+        self.usr = curses.newwin(2560,20)#trying to make a window but im hungry
     
     def Boots(self):#see if I can make this the main window wit a boot up and file director
          
@@ -46,7 +45,12 @@ class KernBootWindow:
     
         termin.endwin()
 
-
-
-
+    def Boxput(self, userBox):
+        termin.clear()
+        termin.echo()
+        termin.keypad(True)
+        termin.getch()
+        termin.clear()
+        if termin.getkey()// its a command prompt line but I got hungry
+        
 boot()
