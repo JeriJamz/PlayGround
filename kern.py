@@ -6,16 +6,18 @@ from notepad import *
 import time,sys,pyautogui as pag, curses
 
 #refresh()<-update screen after input, noutrefresh()<-change background(just text),doupdate()<- update display
-
+#Just thinking if I have the user input in all the other files do I need to have user input added here. 
+#Ima just make this a screen
 class KernBootWindow:
 
-    def __init__(self,boot,put, usr):
+    def __init__(self,boot,put, usr,coline):
         self.boot = termi
         self.put = termin.getkey()
-        self.usr = curses.newwin(2560,20)#trying to make a window but im hungry
-    
+        self.coline = pag.size()#maybe not just trying to autosize the window, think this just for mouses
+        self.usr = curses.newpad(coline.)#I think this can make a box inside a box so I can write in the box. M Night Shyamalan
+         #Would be proud   
     def Boots(self):#see if I can make this the main window wit a boot up and file director
-         
+         #****** FOOOD TIME... plus I gott study*******
         termin = curses.initscr()
 
         termin.def_shell_mode() #yes all that commiting for one line
@@ -26,10 +28,6 @@ class KernBootWindow:
         termin.addstr()#I should start getting user input... Let me make a menu
 
         menu()
-
-        act = self.put
-        act()#this whooping on me I gotta go read
-        
     
     def oltra(self,End):
         
@@ -53,4 +51,4 @@ class KernBootWindow:
         termin.clear()
         if termin.getkey()// its a command prompt line but I got hungry
         
-boot()
+Boots()
