@@ -13,8 +13,6 @@ import("fmt"
        "time"
       )
 
-var WorldClock = time.ParseDuration("2m")//Work on time clock its for time out... reminder dude its food time
-
 func main(){
 
     online()
@@ -28,7 +26,7 @@ func online(){// if its a func is it online(tinder(???))
     
 }
 
-const Tinder(){ // trying to relearn go
+func Tinder(){ // trying to relearn go
 //This should make it a host and client server
     YelloPages := net.Dialer
     CWTO, cancel := context.WithoutTimeout(context.Background(), time.Minute)
@@ -72,7 +70,7 @@ const Tinder(){ // trying to relearn go
     
 }
 
-const popup(){//handle errors in here
+func popup(){//handle errors in here
 
     type Error interface{
 
@@ -83,7 +81,7 @@ const popup(){//handle errors in here
     
 }
 
-const locate(){//this gone be my addr func everything about an address I need to pass through YelloPages
+func locate(){//this gone be my addr func everything about an address I need to pass through YelloPages
 
     type Addr interface{
 
@@ -97,7 +95,7 @@ const locate(){//this gone be my addr func everything about an address I need to
 
         Err string
         Addr string
-        timeout() bool// Still working on the time out func
+        Timeout() bool// Still working on the time out func
         
     }
 
@@ -113,5 +111,18 @@ const locate(){//this gone be my addr func everything about an address I need to
     )
     
     func (e *AddrError) Timeout() bool
+    
+}
+
+func Timeout(){
+
+    var stuckhand = time.Duration("2m")
+    var stopwatch = time.After(2 * time.Minute)
+
+    if stopwatch != stuckhand{
+        fmt.Println("...")//if this works I'll take it out but I have no compilation time so let a note 
+    }else stopwatch == stuckhand{
+        fmt.Println("408")
+    }
     
 }
