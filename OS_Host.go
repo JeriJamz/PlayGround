@@ -19,8 +19,28 @@ func main(){
     
   }
     
-    conn,err := l.Accept()
+    for{
+
+            conn, err := ln.Accept()
+            if err != nil{
+
+                  Timeout()
+                  
+            }
+            go handleConnection(conn)    
+    }
     
 }
 
+func Timeout(){
 
+    var stuckhand = time.Duration("2m")
+    var stopwatch = time.After(2 * time.Minute)
+
+    if stopwatch != stuckhand{
+        fmt.Println("...")//if this works I'll take it out but I have no compilation time so let a note 
+    }else stopwatch == stuckhand{
+        fmt.Println("408")
+    }
+    
+}
