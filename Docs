@@ -11,3 +11,17 @@ Just notes and reminders for the OS.
         *Preferred if you type uppercase but all lowercase isnt necessary.(I.E the shell isnt case sensitive. Other program might be)
     "Printr":
         as mention you can use the left keypad to rush the output.
+
+(3)Server:
+   *The server works but its for intra... INTRANET. Not the internet. Have no way to hooking up the IBM
+   or the US Military so right now its ment for local connection with no modem all you need is a wireless adapter
+   *That port number dont worry. Ima change it soon. i need to brush on raw socket.
+
+
+*********************Future Updates*******************************
+
+-A shell
+-A port connection
+-Threading count
+-A proper shell
+-maybe a bus system and thread count
