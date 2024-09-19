@@ -9,7 +9,7 @@ def qprint(z):
         sys.stdout.flush()
         time.sleep(.05)
     except:
-        curses.cbreak("Space")
+        curses.cbreak(curses.KEY_LEFT)#I thhink this actually works
         print(z)#I think this work. I refuse to import keyboard
 
 
@@ -20,5 +20,5 @@ def rpgprint(z):
             sys.stdout.flush()
             time.sleep(.573)
         except:
-            curses.cbreak("Space")
+            curses.cbreak(curses.KEY_LEFT)
             print(z)
